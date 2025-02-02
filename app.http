@@ -1,0 +1,16 @@
+# Cadastro de empresa
+POST http://localhost:8080/empresa
+content-type: application/json
+{
+  "cnpj": null,
+  "nomeEmpresa": "Gael e Sara MEI"
+}
+
+### Lista empresa
+
+GET http://localhost:8080/empresa
+
+
+### prometheus
+
+GET http://localhost:8080/actuator/prometheus

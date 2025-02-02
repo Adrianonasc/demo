@@ -16,7 +16,7 @@ public class Vigencia {
     private UUID vigenciaId;
 
     @Column(name = "CODIGO", nullable = false)
-    private int codigo;
+    private Long codigo;
 
     @Column(name = "DATA_VIGENCIA", nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
