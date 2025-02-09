@@ -1,9 +1,10 @@
 # Cadastro de empresa
 POST http://localhost:8080/empresa
 content-type: application/json
+
 {
-  "cnpj": null,
-  "nomeEmpresa": "Gael e Sara MEI"
+  "cnpj": "14890437000152",
+  "nomeEmpresa": "Andreia e Bianca Lavanderia Ltda"
 }
 
 ### Lista empresa

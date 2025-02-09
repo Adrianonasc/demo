@@ -13,7 +13,7 @@ public class Vigencia {
 
     @Id
     @Column(name = "VIGENCIA_ID", nullable = false)
-    private UUID vigenciaId;
+    private String vigenciaId;
 
     @Column(name = "CODIGO", nullable = false)
     private Long codigo;
