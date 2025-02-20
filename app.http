@@ -11,6 +11,15 @@ content-type: application/json
 
 GET http://localhost:8080/empresa
 
+### Get empresa
+
+GET http://localhost:8080/empresa/14890437000152
+
+
+### Consulta empresa na receita
+
+GET http://localhost:8080/empresa/consulta_receita_federal/00360305000104
+
 
 ### prometheus
 
