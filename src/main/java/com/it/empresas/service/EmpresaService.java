@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 
-import com.it.empresas.model.entities.Vigencia;
+import com.it.empresas.entities.Vigencia;
 import com.it.empresas.model.request.CadastroEmpresa;
 import com.it.empresas.model.response.VigenciasResponse;
 import com.it.empresas.repository.VigenciaRepository;

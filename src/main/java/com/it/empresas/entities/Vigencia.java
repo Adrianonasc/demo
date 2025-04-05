@@ -1,10 +1,9 @@
-package com.it.empresas.model.entities;
+package com.it.empresas.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Date;
-import java.util.UUID;
 
 @Data
 @Entity

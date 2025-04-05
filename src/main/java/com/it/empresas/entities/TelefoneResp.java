@@ -1,10 +1,14 @@
-package com.it.empresas.model.entities;
-
-import jakarta.persistence.*;
-import lombok.Data;
+package com.it.empresas.entities;
 
 import java.util.Date;
-import java.util.UUID;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
+import lombok.Data;
 
 @Data
 @Entity
@@ -13,10 +17,10 @@ public class TelefoneResp {
 
     @Id
     @Column(name = "TELEFONE_ID", nullable = false)
-    private UUID telefoneId;
+    private String telefoneId;
 
     @Column(name = "RESPONSAVEL_ID", nullable = false)
-    private UUID responsavelId;
+    private String responsavelId;
 
     @Column(name = "DATA_VIGENCIA_TELEFONE", nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
@@ -24,6 +28,4 @@ public class TelefoneResp {
 
     @Column(name = "TELEFONE", nullable = false)
     private String telefone;
-
-    // Getters and Setters
 }

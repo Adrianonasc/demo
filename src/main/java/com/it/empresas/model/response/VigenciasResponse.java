@@ -2,7 +2,7 @@ package com.it.empresas.model.response;
 
 import java.util.Date;
 
-import com.it.empresas.model.entities.Vigencia;
+import com.it.empresas.entities.Vigencia;
 
 public record VigenciasResponse(
     Long codigo,

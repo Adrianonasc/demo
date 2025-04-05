@@ -1,10 +1,9 @@
-package com.it.empresas.model.entities;
+package com.it.empresas.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Date;
-import java.util.UUID;
 
 @Data
 @Entity
@@ -13,10 +12,10 @@ public class Responsavel {
 
     @Id
     @Column(name = "RESPONSAVEL_ID", nullable = false)
-    private UUID responsavelId;
+    private String responsavelId;
 
     @Column(name = "VIGENCIA_ID", nullable = false)
-    private UUID vigenciaId;
+    private String vigenciaId;
 
     @Column(name = "TIPO", nullable = false)
     private int tipo;
