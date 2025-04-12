@@ -12,6 +12,11 @@ import com.it.empresas.model.request.CadastroEmpresa;
 import com.it.empresas.model.response.VigenciasResponse;
 import com.it.empresas.repository.VigenciaRepository;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
 @Service
 public class EmpresaService {
 

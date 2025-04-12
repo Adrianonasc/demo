@@ -12,8 +12,10 @@ import com.it.empresas.model.request.CadastroEmpresa;
 import com.it.empresas.model.response.VigenciasResponse;
 import com.it.empresas.service.EmpresaService;
 
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+@AllArgsConstructor
 @Slf4j
 @RestController
 @RequestMapping("/empresa")

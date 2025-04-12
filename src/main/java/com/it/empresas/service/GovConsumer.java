@@ -7,10 +7,14 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.it.empresas.model.response.VigenciasResponse;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
+@AllArgsConstructor
+@NoArgsConstructor
 @Service
 public class GovConsumer {
 
