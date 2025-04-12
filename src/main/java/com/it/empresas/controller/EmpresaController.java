@@ -26,8 +26,9 @@ public class EmpresaController {
 
   @GetMapping()
   public VigenciasResponse[] listar() {
-    log.info("Listando empresas");
-    return empresaService.listar();
+    var empresas = empresaService.listar();
+    log.info("Listando empresas {}", empresas.length);
+    return empresas;
   }
 
   @GetMapping("/{cnpj}")

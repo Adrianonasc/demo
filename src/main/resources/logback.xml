@@ -1,0 +1,40 @@
+<configuration>
+  <!-- Configuração para Dev-Local -->
+  <SpringProfile  name="dev | staging">
+        <import class="ch.qos.logback.classic.encoder.PatternLayoutEncoder" />
+        <import class="ch.qos.logback.core.ConsoleAppender" />
+
+        <appender name="STDOUT" class="ConsoleAppender">
+            <encoder class="PatternLayoutEncoder">
+                <pattern>%d{HH:mm:ss.SSS} %-5level %logger{36} -- %msg%n</pattern>
+            </encoder>
+        </appender>
+
+      <root level="${LOG_LEVEL}" >
+        <appender-ref ref="STDOUT" />
+      </root>
+  </SpringProfile >
+
+  <!-- Configuração para Homol/Prod -->
+  <SpringProfile  name="production">
+      <appender name="jsonConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <fieldNames>
+                <timestamp>timestamp</timestamp>
+                <message>message</message>
+                <stackTrace>stacktrace</stackTrace>
+                <logger>class</logger>
+                <thread>[ignore]</thread>
+                <levelValue>[ignore]</levelValue>
+                <version>[ignore]</version>
+                <stackTrace>stackTrace</stackTrace>
+            </fieldNames>
+        </encoder>
+      </appender>
+
+      <root level="${LOG_LEVEL}" >
+        <appender-ref ref="jsonConsoleAppender" />
+      </root>
+  </SpringProfile>
+</configuration>
+
