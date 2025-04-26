@@ -1,6 +1,6 @@
 <configuration>
   <!-- Configuração para Dev-Local -->
-  <SpringProfile  name="dev">
+  <SpringProfile name="dev">
         <import class="ch.qos.logback.classic.encoder.PatternLayoutEncoder" />
         <import class="ch.qos.logback.core.ConsoleAppender" />
 
@@ -16,7 +16,7 @@
   </SpringProfile >
 
   <!-- Configuração para Homol/Prod -->
-  <SpringProfile  name="Homol|Prod">
+  <SpringProfile name="Homol|Prod">
       <appender name="jsonConsoleAppender" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="net.logstash.logback.encoder.LogstashEncoder">
             <fieldNames>
